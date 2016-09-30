@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cd "$(dirname "${0}")"
+# this is in preloaded/ directory of task, so step up a directory
+cd "$(dirname "${0}")/.."
 
 while read sha file; do
   if ! [ -f "${file}" ]; then
