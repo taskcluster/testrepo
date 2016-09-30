@@ -19,3 +19,7 @@ done < shasums
 
 cat shasums
 echo "All SHA256 values match expected values."
+
+echo "Now adding a file to the cache..."
+echo -n "dummy file" > my-task-caches/devtools-app/foo.bar
+echo "All done."
