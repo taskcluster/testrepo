@@ -1,5 +1,5 @@
 function get-sha256 {
-  param($file);[system.bitconverter]::tostring([System.Security.Cryptography.sha256]::create().computehash([system.io.file]::openread((resolve-path $file)))) -replace “-“,””
+  param($file);[system.bitconverter]::tostring([System.Security.Cryptography.sha256]::create().computehash([system.io.file]::openread((resolve-path $file)))) -replace "-",""
 }
 
 $sha = get-sha256 my-task-caches/devtools-app/index.html
