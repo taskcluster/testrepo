@@ -1,3 +1,5 @@
+import-module -Name C:\Windows\System32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Management -verbose
+
 function get-sha256 {
   param($file);[system.bitconverter]::tostring([System.Security.Cryptography.sha256]::create().computehash([system.io.file]::openread((resolve-path $file)))) -replace "-",""
 }
