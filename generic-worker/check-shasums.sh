@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # this is in preloaded/ directory of task, so step up a directory
 cd "$(dirname "${0}")/.."
@@ -16,9 +16,9 @@ while read sha file; do
     echo "Wanted: ${out}" >&2
     exit 65
   fi
-done < shasums
+done < preloaded/shasums
 
-cat shasums
+cat preloaded/shasums
 echo "All SHA256 values match expected values."
 
 echo "Now adding a file to the cache..."
