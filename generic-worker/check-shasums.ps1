@@ -22,15 +22,15 @@ if ($sha -ne "5d6977130018253e9c655e95b4abeb4f6f7c1deac989032b22a77a6a2f5605bc")
   exit 64
 }
 
-$sha = get-sha256 my-task-caches\tomatoes\mozharness\docs\gaia_integration.rst
-if ($sha -ne "7cacc851d921716497bbd3d35134fa8ab34e6c5ae072954fae89b20f2977fc44") {
-  "Wrong hash for my-task-caches\tomatoes\mozharness\docs\gaia_integration.rst: ${sha}"
+$sha = get-sha256 my-task-caches\unknown_issuer_app_1\icon-128.png
+if ($sha -ne "fe9b35abf46f21c12e4128c84581d7d37344cb6c38e77efd5aecd4b71070847d") {
+  "Wrong hash for my-task-caches\unknown_issuer_app_1\icon-128.png: ${sha}"
   exit 64
 }
 
-$sha = get-sha256 my-task-caches\tomatoes\mozharness\unit.sh
-if ($sha -ne "4bb5b3476d844fa4d27fcff48bc8b24990f907e68637dab5abfe1d8d72ccd6f0") {
-  "Wrong hash for my-task-caches\tomatoes\mozharness\unit.sh: ${sha}"
+$sha = get-sha256 my-task-caches\unknown_issuer_app_1\META-INF\MANIFEST.MF
+if ($sha -ne "5d69946fde205a38d48a1920f17a19eb8306d160953c22c7b7c448804c35c610") {
+  "Wrong hash for my-task-caches\unknown_issuer_app_1\META-INF\MANIFEST.MF: ${sha}"
   exit 64
 }
 
